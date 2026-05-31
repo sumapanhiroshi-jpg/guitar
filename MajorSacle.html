@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>メジャースケール</title>
+<style>
+/* 必要最小限のスタイルを復元 */
+body{font-family: Inter, system-ui, -apple-system, "Helvetica Neue", Arial; margin:0; color:#1E1E1E; background:#fff;}
+.wp-site-blocks{padding:24px;max-width:800px;margin:0 auto}
+h1.wp-block-site-title{font-size:18px;margin:0;text-align:center}
+h2.wp-block-post-title{font-size:28px;text-align:center;margin:24px 0}
+.wp-block-paragraph{margin:12px 0}
+#wp-message, #wp-message-2{padding:8px;background:#f0f0f0;border-radius:4px;font-weight:bold}
+#wp-interval-control{margin-top:8px;margin-bottom:12px;font-size:0.9em;display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-start;padding-left:20px}
+figure.wp-block-image{margin:16px auto;text-align:center}
+figure.wp-block-image img{max-width:100%;height:auto;display:block;margin:0 auto}
+ul.wp-block-list{padding:0;max-width:100%;list-style-position:inside}
+ul.wp-block-list li{margin-left:20px;padding-left:0;margin-bottom:24px}
+.entry-content{margin:0 auto}
+
+/* スマートフォン最適化 */
+@media (max-width: 768px) {
+  .wp-site-blocks{padding:16px}
+  h1.wp-block-site-title{font-size:16px}
+  h2.wp-block-post-title{font-size:22px;margin:16px 0}
+  .wp-block-paragraph{font-size:15px;margin:10px 0}
+  #wp-interval-control{font-size:13px;gap:4px}
+  #wp-interval-control input{width:50px !important;padding:4px}
+  #wp-interval-control button{padding:4px 8px;font-size:13px}
+  #wp-message, #wp-message-2{padding:6px;font-size:14px}
+  ul.wp-block-list li{margin-bottom:12px}
+}
+
+@media (max-width: 480px) {
+  .wp-site-blocks{padding:12px}
+  h1.wp-block-site-title{font-size:14px}
+  h2.wp-block-post-title{font-size:18px;margin:12px 0}
+  .wp-block-paragraph{font-size:14px;margin:8px 0}
+  #wp-interval-control{flex-direction:column;align-items:flex-start;font-size:12px;gap:3px}
+  #wp-interval-control input{width:100% !important;padding:3px}
+  #wp-interval-control button{width:100%;padding:3px 6px;font-size:12px}
+  #wp-message, #wp-message-2{padding:4px;font-size:12px}
+  div[style*="display:flex"][style*="gap:8px"]{flex-direction:column !important;gap:4px !important}
+  p.wp-block-paragraph{max-width:100%}
+}
+</style>
+</head>
+<body>
+
+<div class="wp-site-blocks">
+  <header class="wp-block-template-part">
+    <div class="wp-block-group alignfull" style="padding:0;margin:0">
+      <div style="padding:20px 0">
+        <h1 class="wp-block-site-title"></h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="wp-block-group is-layout-flow">
+    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+    <div class="wp-block-group has-global-padding is-layout-constrained">
+      <h2 class="has-text-align-center wp-block-post-title has-large-font-size">メジャースケール</h2>
+    </div>
+
+    <div class="entry-content wp-block-post-content has-global-padding is-layout-constrained">
+      <p class="wp-block-paragraph">基本中の基本、これを覚えないと始まらない！(Key C)</p>
+
+      <figure class="wp-block-image size-large">
+        <img src="https://com70777.wordpress.com/wp-content/uploads/2026/01/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2026-01-10-16.16.46.png?w=512" width="512" height="145" alt="" />
+      </figure>
+
+      <p class="wp-block-paragraph">◾️ロック式ポジション･･･各弦3ポジションずつ押さえる。</p>
+
+      <figure class="wp-block-image size-large">
+        <img src="https://com70777.wordpress.com/wp-content/uploads/2026/01/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2026-01-11-12.37.31.png?w=512" width="512" height="251" alt="" />
+      </figure>
+
+      <p class="wp-block-paragraph">◾️ジャズ式ポジション･･･2弦のみ2ポジション、その他は3ポジションずつ押さえる。</p>
+
+      <figure class="wp-block-image size-large">
+        <img src="https://com70777.wordpress.com/wp-content/uploads/2026/01/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2026-01-11-12.50.04.png?w=512" width="512" height="249" alt="" />
+      </figure>
+
+      <p class="wp-block-paragraph">◾️基本練習</p>
+
+      <div id="wp-interval-control" style="margin-top:8px;margin-bottom:12px;font-size:0.9em;display:flex;gap:6px;align-items:center;flex-wrap:wrap;"></div>
+
+      <ul class="wp-block-list">
+        <li>
+          4,5,6弦ルートスタート上昇フレーズを覚える
+
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center;padding-left:20px;">
+            <p class="wp-block-paragraph" style="margin:0;">キー固定：</p>
+            <div id="wp-message-container" style="flex:1;"></div>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center;padding-left:20px;">
+            <p class="wp-block-paragraph" style="margin:0;">キー変動：</p>
+            <div id="wp-message-container-2" style="flex:1;"><div id="wp-message-2"></div></div>
+        </li>
+
+        <li>
+          1,2,3弦ルートスタート下降フレーズを覚える
+
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center;padding-left:20px;">
+            <p class="wp-block-paragraph" style="margin:0;">キー固定(ロック式)：</p>
+            <div id="wp-message-container-3" style="flex:1;"></div>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center;padding-left:20px;">
+            <p class="wp-block-paragraph" style="margin:0;">キー変動(ロック式)：</p>
+            <div id="wp-message-container-4" style="flex:1;"><div id="wp-message-3"></div></div>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center;padding-left:20px;">
+            <p class="wp-block-paragraph" style="margin:0;">キー固定(ジャズ式)：</p>
+            <div id="wp-message-container-5" style="flex:1;"></div>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center;padding-left:20px;">
+            <p class="wp-block-paragraph" style="margin:0;">キー変動(ジャズ式)：</p>
+            <div id="wp-message-container-6" style="flex:1;"><div id="wp-message-4"></div></div>
+          </div>
+        </li>
+
+        <li>1音飛ばし上昇下降フレーズ（ロック式のみ）</li>
+        <li>コードトーン上昇下降フレーズ（ジャズ式のみ）</li>
+      </ul>
+
+    </div>
+  </main>
+</div>
+
+<script type="text/javascript">
+(function(){
+  function init(){
+    window.clickDebugLink = function(parentId, obj){
+      if(!window.jQuery) return;
+      var $ = window.jQuery;
+      $('#' + parentId).children('div').hide();
+      document.getElementById(obj.href.substr(obj.href.indexOf('#') + 1)).style.display = 'block';
+      $(obj.href.substr(obj.href.indexOf('#'))).show();
+      $(obj).parent().addClass('current').siblings('li').removeClass('current');
+      return false;
+    };
+  }
+  if(document.readyState !== 'loading') init(); else document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
+
+<script type="text/javascript">
+(function(){
+  function shuffleArray(arr){
+    var a = arr.slice();
+    for(var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+
+  function initShuffleDisplay(){
+    var msgContainer = document.getElementById('wp-message-container');
+    var msgContainer2 = document.getElementById('wp-message-container-2');
+    var msgContainer3 = document.getElementById('wp-message-container-3');
+    var msgContainer4 = document.getElementById('wp-message-container-4');
+    var msgContainer5 = document.getElementById('wp-message-container-5');
+    var msgContainer6 = document.getElementById('wp-message-container-6');
+    var intervalCtrl = document.getElementById('wp-interval-control');
+    if(!msgContainer || !intervalCtrl) return;
+
+    try{
+      var items = [
+        'キーC 6弦 小指',
+        'キーC 6弦 薬指',
+        'キーC 6弦 人差し指',
+        'キーC 5弦 小指',
+        'キーC 5弦 薬指',
+        'キーC 5弦 人差し指',
+        'キーC 4弦 人差し指'
+      ];
+
+      var items2 = [
+        'キーC 1弦 小指',
+        'キーC 1弦 中指',
+        'キーC 1弦 人差し指',
+        'キーC 2弦 小指',
+        'キーC 2弦 中指',
+        'キーC 2弦 人差し指',
+        'キーC 3弦 小指'
+      ];
+
+      var keys = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
+      var positions = ['6弦 小指', '6弦 薬指', '6弦 人差し指', '5弦 小指', '5弦 薬指', '5弦 人差し指', '4弦 人差し指'];
+      var positions2 = ['1弦 小指', '1弦 中指', '1弦 人差し指', '2弦 小指', '2弦 中指', '2弦 人差し指', '3弦 小指'];
+
+      var sequence = shuffleArray(items);
+      var idx = 0;
+      var intervalSeconds = 5;
+      var intervalId = null;
+
+      var el = document.createElement('div');
+      el.id = 'wp-message';
+      el.style.cssText = 'padding:8px;background:#f0f0f0;border-radius:4px;font-weight:bold;';
+      msgContainer.appendChild(el);
+
+      var el2 = null;
+      if(msgContainer2){
+        el2 = document.getElementById('wp-message-2');
+        if(el2){
+          el2.style.cssText = 'padding:8px;background:#f0f0f0;border-radius:4px;font-weight:bold;';
+        }
+      }
+
+      var el3 = null;
+      if(msgContainer3){
+        el3 = document.createElement('div');
+        el3.id = 'wp-message-copy-1';
+        el3.style.cssText = 'padding:8px;background:#f0f0f0;border-radius:4px;font-weight:bold;';
+        msgContainer3.appendChild(el3);
+      }
+
+      var el4 = null;
+      if(msgContainer4){
+        el4 = document.getElementById('wp-message-3');
+        if(el4){
+          el4.style.cssText = 'padding:8px;background:#f0f0f0;border-radius:4px;font-weight:bold;';
+        }
+      }
+
+      var el5 = null;
+      if(msgContainer5){
+        el5 = document.createElement('div');
+        el5.id = 'wp-message-copy-2';
+        el5.style.cssText = 'padding:8px;background:#f0f0f0;border-radius:4px;font-weight:bold;';
+        msgContainer5.appendChild(el5);
+      }
+
+      var el6 = null;
+      if(msgContainer6){
+        el6 = document.getElementById('wp-message-4');
+        if(el6){
+          el6.style.cssText = 'padding:8px;background:#f0f0f0;border-radius:4px;font-weight:bold;';
+        }
+      }
+
+      function tick(){
+        if(!sequence || !sequence.length){ sequence = shuffleArray(items); idx = 0; }
+        var text = sequence[idx];
+        el.textContent = text;
+        
+        // キー変動行(6弦): ランダムなキー + ランダムなポジション(6弦系)
+        if(el2){
+          var randomKey = keys[Math.floor(Math.random() * keys.length)];
+          var randomPosition = positions[Math.floor(Math.random() * positions.length)];
+          el2.textContent = 'キー' + randomKey + ' ' + randomPosition;
+        }
+        
+        // キー固定(ロック式): キーC + ランダムなポジション(1～3弦系)
+        if(el3){
+          var randomPosition1 = positions2[Math.floor(Math.random() * positions2.length)];
+          el3.textContent = 'キーC ' + randomPosition1;
+        }
+        
+        // キー変動行(1～3弦): ランダムなキー + ランダムなポジション(1～3弦系)
+        if(el4){
+          var randomKey2 = keys[Math.floor(Math.random() * keys.length)];
+          var randomPosition2 = positions2[Math.floor(Math.random() * positions2.length)];
+          el4.textContent = 'キー' + randomKey2 + ' ' + randomPosition2;
+        }
+
+        // キー固定(ジャズ式): キーC + ランダムなポジション(1～3弦系)
+        if(el5){
+          var randomPosition3 = positions2[Math.floor(Math.random() * positions2.length)];
+          el5.textContent = 'キーC ' + randomPosition3;
+        }
+
+        if(el6){
+          var randomKey4 = keys[Math.floor(Math.random() * keys.length)];
+          var randomPosition4 = positions2[Math.floor(Math.random() * positions2.length)];
+          el6.textContent = 'キー' + randomKey4 + ' ' + randomPosition4;
+        }
+        
+        idx++;
+        if(idx >= sequence.length){ sequence = shuffleArray(items); idx = 0; }
+      }
+
+      function startInterval(){
+        if(intervalId) clearInterval(intervalId);
+        intervalId = setInterval(tick, intervalSeconds * 1000);
+      }
+
+      window._wpMessageTimer = window._wpMessageTimer || {};
+      window._wpMessageTimer.next = tick;
+      window._wpMessageTimer.getIndex = function(){ return idx; };
+      window._wpMessageTimer.getSequence = function(){ return sequence.slice(); };
+      window._wpMessageTimer.getIntervalSeconds = function(){ return intervalSeconds; };
+      window._wpMessageTimer.setSecondsInterval = function(sec){
+        sec = Number(sec) || 1;
+        if(sec < 1) sec = 1;
+        intervalSeconds = sec;
+        startInterval();
+        console.log('[wp-message-shuffle] interval set to ' + intervalSeconds + 's');
+      };
+
+      try{ el.setAttribute('aria-live','polite'); if(el2) el2.setAttribute('aria-live','polite'); if(el3) el3.setAttribute('aria-live','polite'); if(el4) el4.setAttribute('aria-live','polite'); if(el5) el5.setAttribute('aria-live','polite'); if(el6) el6.setAttribute('aria-live','polite'); }catch(e){}
+
+      var lbl = document.createElement('label');
+      lbl.textContent = '表示間隔(秒):'; lbl.style.marginRight = '6px';
+      var input = document.createElement('input'); input.type = 'number'; input.min = '1'; input.value = String(intervalSeconds); input.style.width = '60px';
+      var btn = document.createElement('button'); btn.type = 'button'; btn.textContent = '適用';
+      btn.onclick = function(){ var v = Number(input.value) || intervalSeconds; window._wpMessageTimer.setSecondsInterval(v); };
+      var info = document.createElement('small'); info.style.color = '#666'; info.textContent = '(変更は即時反映)';
+
+      intervalCtrl.appendChild(lbl); intervalCtrl.appendChild(input); intervalCtrl.appendChild(btn); intervalCtrl.appendChild(info);
+
+      tick(); startInterval();
+      console.log('[wp-message-shuffle] started, length=' + items.length + ', interval=' + intervalSeconds + 's');
+    } catch(e){ console.error('[wp-message-shuffle] error', e); }
+  }
+
+  if(document.readyState !== 'loading') initShuffleDisplay(); else document.addEventListener('DOMContentLoaded', initShuffleDisplay);
+})();
+</script>
+
+</body>
+</html>
