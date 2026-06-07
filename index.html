@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ギタースケール練習帳 | 表紙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=RocknRoll+One&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-top: #f4efe3;
+      --bg-bottom: #e8f1dc;
+      --ink: #1f2a22;
+      --subtle: #5f6d62;
+      --card: rgba(255, 255, 255, 0.8);
+      --line: rgba(31, 42, 34, 0.15);
+      --accent: #1f6f44;
+      --accent-2: #b86d2f;
+      --shadow: 0 16px 36px rgba(31, 42, 34, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Zen Kaku Gothic New", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 12%, rgba(184, 109, 47, 0.2), transparent 30%),
+        radial-gradient(circle at 92% 78%, rgba(31, 111, 68, 0.2), transparent 34%),
+        linear-gradient(165deg, var(--bg-top), var(--bg-bottom));
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .wrap {
+      width: min(980px, 92vw);
+      margin: 0 auto;
+      padding: 40px 0 56px;
+      animation: fade-up 600ms ease-out both;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      background: var(--card);
+      backdrop-filter: blur(4px);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-family: "RocknRoll One", sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      font-size: clamp(28px, 4.2vw, 42px);
+      line-height: 1.2;
+    }
+
+    .sub {
+      margin: 0;
+      color: var(--subtle);
+      font-size: clamp(14px, 2vw, 17px);
+    }
+
+    .grid {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 16px;
+      padding: 14px 16px;
+      box-shadow: 0 8px 20px rgba(31, 42, 34, 0.08);
+      transform: translateY(8px);
+      opacity: 0;
+      animation: rise-in 520ms ease-out forwards;
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .card-link:hover,
+    .card-link:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 26px rgba(31, 42, 34, 0.14);
+      border-color: rgba(31, 111, 68, 0.5);
+      outline: none;
+    }
+
+    .title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .file {
+      margin-top: 6px;
+      color: var(--subtle);
+      font-size: 13px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    .card-link:nth-child(1) { animation-delay: 70ms; }
+    .card-link:nth-child(2) { animation-delay: 120ms; }
+    .card-link:nth-child(3) { animation-delay: 170ms; }
+    .card-link:nth-child(4) { animation-delay: 220ms; }
+    .card-link:nth-child(5) { animation-delay: 270ms; }
+    .card-link:nth-child(6) { animation-delay: 320ms; }
+    .card-link:nth-child(7) { animation-delay: 370ms; }
+
+    .footer-note {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--subtle);
+      font-size: 13px;
+    }
+
+    @keyframes fade-up {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes rise-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 720px) {
+      .wrap {
+        padding-top: 28px;
+      }
+
+      .hero {
+        padding: 20px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .title {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>ギタースケール練習帳</h1>
+      <p class="sub">学びたいスケールを選んで、各ページへ移動できます。</p>
+    </section>
+
+    <ul class="grid">
+      <li><a class="card-link" href="MajorSacle.html"><p class="title">メジャースケール</p><p class="file">MajorSacle.html</p></a></li>
+      <li><a class="card-link" href="MinorScale.html"><p class="title">マイナースケール</p><p class="file">MinorScale.html</p></a></li>
+      <li><a class="card-link" href="DorianScale.html"><p class="title">ドリアンスケール</p><p class="file">DorianScale.html</p></a></li>
+      <li><a class="card-link" href="LydianScale.html"><p class="title">リディアンスケール</p><p class="file">LydianScale.html</p></a></li>
+      <li><a class="card-link" href="MixolydianScale.html"><p class="title">ミクソリディアンスケール</p><p class="file">MixolydianScale.html</p></a></li>
+      <li><a class="card-link" href="MelodicMinorScale.html"><p class="title">メロディックマイナースケール</p><p class="file">MelodicMinorScale.html</p></a></li>
+      <li><a class="card-link" href="HarmonicMinorScale.html"><p class="title">ハーモニックマイナースケール</p><p class="file">HarmonicMinorScale.html</p></a></li>
+    </ul>
+
+    <p class="footer-note">Cover Page / 2026</p>
+  </main>
+</body>
+</html>
